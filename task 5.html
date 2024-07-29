@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style 5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header align-items-center bg-light p-2 ">
+            <div class="container-fluid" >
+                <div class="row ">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="logo">
+                            <img src="images/logo.PNG" alt="" class="img-fluid mt-2" style="max-width: 74%;" >
+                        </div>
+                    </div>
+
+                    <div class="navbar navbar-expand-md col-md-6 col-sm-6 text-center ">
+                        <div class="container">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                    
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                                    <li class="nav-item">
+                                        <button class='btn btn-outline-none nav-link'>Login</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <hr class="d-none d-md-block mx-2 my-2" style="height: 24px; border-left: 2px solid #726e6e;">
+                                    </li>
+                                    <li class="nav-item me-4">
+                                        <button class='btn btn-outline-none  nav-link'>Register</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="btn btn-success  btn-sm-width py-2">
+                                            <i class="fa-solid fa-arrow-right"></i> Buy/Sell Now
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-section text-white d-flex">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h1 class="text-center mt-3 pt-5 fs-1 fw-bolder">
+                            EXOTIC BIRDS PETS & ACCESSORIES
+                        </h1>
+                        <p class="text-center fs-5 mt-3">BUY & SELL | EXOTIC BIRDS & PETS MARKETPLACE | PAKISTAN</p>
+                        <div class="search-container mt-4 p-2 rounded-3 text-center m-auto">
+                            <select id="what" class="rounded-2 mt-2 border-1 border-muted text-muted">
+                                <option value="">What?</option>
+                                <option value="item1">Parrot</option>
+                                <option value="item2">Dove</option>
+                                <option value="item3">Pigeons</option>
+                            </select>
+                            <select id="where" class="mt-2 mb-2 pl-2 rounded-2 border-1 border-muted m-2 text-muted">
+                                <option value="">Where?</option>
+                                <option value="location1">Lahore</option>
+                                <option value="location2">karachi</option>
+                                <option value="location3">Islamabad</option>
+                            </select>
+                            <button class="btn-responsive btn btn-success col-md-2 col-sm-12  py-3 px-5 mb-2 rounded-2 m-auto text-white border-0  "
+                                onclick="findNow()">Find</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <section class="category d-flex justify-content-center align-items-center">
+            <div class="container-fluid">
+                <div class="row mt-5 m-auto">
+                    <h1 class="justify-content-center text-center fs-2 text-success mb-5 mt-3">
+                        Featured Category
+                    </h1>
+                    
+                    <div class="col-md-2 col-sm-2">
+                        <div class="image text-center   ">
+                            <img src="/images/bird4.jpeg" class="img-fluid rounded-2">
+                            <div class="pic2-name mt-2 mb-3  justify-content-center align-items-center">Food & Accessories
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="image text-center">
+                            <img src="/images/bird.jpeg" class="img-fluid rounded-2">
+                            <div class="pic2-name mt-2 mb-3 justify-content-center align-items-center">Love Bird</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="image text-center">
+                            <img src="/images/bird5.jpeg" class="img-fluid rounded-2">
+                            <div class="pic2-name mt-2 mb-3 justify-content-center align-items-center">Ring-neck & Plum
+                                Head</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="image text-center">
+                            <img src="/images/bird3.jpeg" class="img-fluid rounded-2">
+                            <div class="pic2-name mt-2 mb-3 justify-content-center align-items-center">Pigeons and Doves
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="image text-center">
+                            <img src="/images/bird4.jpeg" class="img-fluid rounded-2">
+                            <div class="pic2-name mt-2 mb-3 justify-content-center align-items-center">Budgerigar</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <div class="image text-center">
+                            <img src="/images/bird6.jpeg" class="img-fluid rounded-2">
+                            <div class="pic2-name mt-2 mb-3 justify-content-center align-items-center">Cockatiel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="latest-ads d-flex justify-content-center align-items-center mt-5 mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                        <h1 class="justify-content-center text-center fs-1 text-success mb-4">
+                            Latest Ads
+                        </h1>
+                        <div class="latest-images">
+                            <div class="product d-flex flex-wrap">
+                                <div class="col-md-3 col-sm-3">
+                                <div class="product-item m-2 text-center">
+                                    <div class="image-container">
+                                        <img src="images/bird2.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                        <div class="wishlist-icon">
+                                            <!-- <button>
+                                                <img src="images/wish.svg" alt="wishlist" />
+                                            </button> -->
+                                        </div>
+                                    </div>
+                                    <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">
+                                        Alexandrine Parakeet</div>
+                                    <div class="icons">
+                                        <span class="icon"><i class="fa-regular fa-clock"></i>2 months ago</span>
+                                        <span class="icon"><i class="fa-regular fa-folder"></i>Budgerigar</span>
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i>Lahore</span>
+                                    </div>
+                                    <div class="price text-success mt-2">Price: 32,000</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="product-item m-2 text-center">
+                                    <div class="image-container">
+                                        <img src="images/brd1.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                        <div class="wishlist-icon">
+                                            <!-- <button>
+                                                <img src="images/wish.svg" alt="wishlist" />
+                                            </button> -->
+                                        </div>
+                                    </div>
+                                    <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">Love Bird</div>
+                                    <div class=" icons">
+                                        <span class="icon"><i class="fa-regular fa-clock"></i> 2 months ago</span>
+                                        <span class="icon"><i class="fa-regular fa-folder"></i> Budgerigar</span>
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i> Lahore</span>
+                                    </div>
+                                    <div class="price text-success mt-2">Price: 32,000</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="product-item m-2 text-center">
+                                    <div class="image-container">
+                                        <img src="images/brd2.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                        <div class="wishlist-icon">
+                                            <!-- <button>
+                                                <img src="images/wish.svg" alt="wishlist" />
+                                            </button> -->
+                                        </div>
+                                    </div>
+                                    <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">Ring-neck & Plum Head</div>
+                                    <div class=" icons">
+                                        <span class="icon"><i class="fa-regular fa-clock"></i> 2 months ago</span>
+                                        <span class="icon"><i class="fa-regular fa-folder"></i> Budgerigar</span>
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i> Lahore</span>
+                                    </div>
+                                    <div class="price text-success mt-2">Price: 32,000</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="product-item m-2 text-center">
+                                    <div class="image-container">
+                                        <img src="images/brd3.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                        <div class="wishlist-icon">
+                                            <!-- <button>
+                                                <img src="images/wish.svg" alt="wishlist" />
+                                            </button> -->
+                                        </div>
+                                    </div>
+                                    <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">Pigeons and Doves</div>
+                                    <div class=" icons">
+                                        <span class="icon"><i class="fa-regular fa-clock"></i> 2 months ago</span>
+                                        <span class="icon"><i class="fa-regular fa-folder"></i> Budgerigar</span>
+                                        <span class="icon"><i class="fa-solid fa-location-dot"></i> Lahore</span>
+                                    </div>
+                                    <div class="price text-success mt-2">Price: 32,000</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-images">
+                        <div class="product d-flex flex-wrap">
+                            <div class="col-md-3 col-sm-3">
+                            <div class="product-item m-2 text-center">
+                                <div class="image-container">
+                                    <img src="images/bird2.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                    <div class="wishlist-icon">
+                                        <!-- <button>
+                                            <img src="images/wish.svg" alt="wishlist" />
+                                        </button> -->
+                                    </div>
+                                </div>
+                                <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">
+                                    Alexandrine Parakeet</div>
+                                <div class="icons">
+                                    <span class="icon"><i class="fa-regular fa-clock"></i>2 months ago</span>
+                                    <span class="icon"><i class="fa-regular fa-folder"></i>Budgerigar</span>
+                                    <span class="icon"><i class="fa-solid fa-location-dot"></i>Lahore</span>
+                                </div>
+                                <div class="price text-success mt-2">Price: 32,000</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="product-item m-2 text-center">
+                                <div class="image-container">
+                                    <img src="images/brd1.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                    <div class="wishlist-icon">
+                                        <!-- <button>
+                                            <img src="images/wish.svg" alt="wishlist" />
+                                        </button> -->
+                                    </div>
+                                </div>
+                                <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">Love Bird</div>
+                                <div class=" icons">
+                                    <span class="icon"><i class="fa-regular fa-clock"></i> 2 months ago</span>
+                                    <span class="icon"><i class="fa-regular fa-folder"></i> Budgerigar</span>
+                                    <span class="icon"><i class="fa-solid fa-location-dot"></i> Lahore</span>
+                                </div>
+                                <div class="price text-success mt-2">Price: 32,000</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="product-item m-2 text-center">
+                                <div class="image-container">
+                                    <img src="images/brd2.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                    <div class="wishlist-icon">
+                                        <!-- <button>
+                                            <img src="images/wish.svg" alt="wishlist" />
+                                        </button> -->
+                                    </div>
+                                </div>
+                                <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">Ring-neck & Plum Head</div>
+                                <div class=" icons">
+                                    <span class="icon"><i class="fa-regular fa-clock"></i> 2 months ago</span>
+                                    <span class="icon"><i class="fa-regular fa-folder"></i> Budgerigar</span>
+                                    <span class="icon"><i class="fa-solid fa-location-dot"></i> Lahore</span>
+                                </div>
+                                <div class="price text-success mt-2">Price: 32,000</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <div class="product-item m-2 text-center">
+                                <div class="image-container">
+                                    <img src="images/brd3.jpg" alt="Parakeet" class="img-fluid rounded-2">
+                                    <div class="wishlist-icon">
+                                        <!-- <button>
+                                            <img src="images/wish.svg" alt="wishlist" />
+                                        </button> -->
+                                    </div>
+                                </div>
+                                <div class="pic3-name mt-2 mb-2 justify-content-center align-items-center">Pigeons and Doves</div>
+                                <div class=" icons">
+                                    <span class="icon"><i class="fa-regular fa-clock"></i> 2 months ago</span>
+                                    <span class="icon"><i class="fa-regular fa-folder"></i> Budgerigar</span>
+                                    <span class="icon"><i class="fa-solid fa-location-dot"></i> Lahore</span>
+                                </div>
+                                <div class="price text-success mt-2">Price: 32,000</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                
+        </section>
+
+        <footer class="footer mt-5 pt-5 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 text-md-start  text-center">
+                        <h5 class="">ABOUT US</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-3">FAQ</li>
+                            <li class="mt-3">Anti Scam</li>
+                            <li class="mt-3">Terms</li>
+                            <li class="mt-3">Privacy</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-md-start  text-center">
+                        <h5>CONTACT & SITEMAP</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-3">Contact Us</li>
+                            <li class="mt-3">Sitemap</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-md-start  text-center">
+                        <h5>MY ACCOUNT</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mt-3">Log in</li>
+                            <li class="mt-3">Register</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-md-start text-center ">
+                        <h5>FOLLOW US ON</h5>
+                        <ul class="list-unstyled mt-3 d-flex justify-content-center justify-content-md-start">
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li class="mx-3"><i class="fab fa-instagram"></i></li>
+                        </ul>
+                        <div class="d-md-block d-none mt-md-4 ">
+                    <a href="https://exoticbirds.pk/">
+                    <img src="https://exoticbirds.pk/images/white_exotic-logo.png" alt="footer-logo"></a> </div>                        
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                    <hr class="mt-2 mb-3 " style=" border: 1px solid; border-color: #fff;">
+                </div>
+                <div class="col-md-12 col-sm-12 text-center pb-5">
+                    © 2024 ExoticBirds. All Rights Reserved. Powered by 
+                    <a href="https://www.upwork.com/agencies/~0157a276018b9955b6" target="_blank" class="text-white text-decoration-none"> Gotechsol</a>
+                </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+   .wrapper{
+        overflow: hidden;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: -35px;
+        right: 5px;     
+    }
+    
+    /* main start */
+.main-section {
+    background: rgb(9, 9, 122);
+    height: 450px;
+}
+.search-container { 
+   width: fit-content;
+   background-color: rgb(223, 236, 233);
+}
+#what, #where{
+    width: 270px;
+    height: 54px;
+}
+/* main end */
+.footer{
+    background: rgb(9, 9, 122);
+     
+}
+.btn-sm-width{
+    width: 100%;
+}
+@media  (max-width:540px){
+    .btn-responsive {
+        width: 94%;
+    }
+}
+
+
+
